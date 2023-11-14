@@ -1,0 +1,76 @@
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+body {
+    background: linear-gradient(to bottom right, rgb(32, 32, 48), rgb(16, 16, 28));
+    background-size: 100vw 100vh;
+    color: white;
+    font-family: Arial;
+    font-size: 1.5em;
+}
+h1 {
+    margin: 0px;
+}
+img {
+    height: 256px;
+}
+.bar {
+    background-color: dodgerblue;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px dodgerblue;
+    height: 16px;
+}
+.big {
+    font-size: 2em;
+}
+.dot {
+    border: solid 4px white;
+    border-radius: 32px;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+.line {
+    border: dashed 2px white;
+    display: inline-block;
+    height: 256px;
+    margin-left: 18px;
+    margin-right: 8px;
+}
+.main {
+    animation: slide 1s;
+    background: linear-gradient(to bottom right, rgb(16, 16, 28), rgb(8, 8, 12));
+    border: solid 1px rgb(4, 4, 6);
+    border-radius: 16px 16px 0px 0px;
+    left: 50%;
+    padding: 16px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 25%;
+    transform: translate(-50%, 0%);
+    width: 768px;
+}
+.progress {
+    background-color: rgb(16, 16, 28);
+    border: solid 1px black;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 4px black;
+    height: 14px;
+    width: 100%;
+}
+.right {
+    text-align: right;
+}
+.small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.5em;
+}
+@keyframes slide {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 25%;
+    }
+}
